@@ -1,0 +1,210 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box
+}
+#navbar ul li a {
+  cursor: pointer;
+}
+:root {
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+}
+
+/* Display flex class here  */
+.flex {
+    display: flex;
+}
+
+/* navigation bar css starts from here */
+/* Hide scrollbar for all browsers */
+body {
+background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70') no-repeat center center/cover;
+    overflow: hidden;
+    /* For Firefox */
+    overflow: auto;
+    min-height: 100vh;
+    /* Enable scrolling */
+    scroll-behavior: smooth;
+        /* Add this line for smooth scrolling */
+}
+
+/* Hide scrollbar for Webkit browsers (e.g., Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 0;
+    /* Set the width to 0 */
+}
+
+/* Optional: Style the scrollbar track (background) */
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Optional: Style the scrollbar thumb (handle) */
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
+#name {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(0, 102, 255);
+    margin-left: 12px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* color: transparent; */
+}
+
+
+
+#navbar {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    position: sticky;
+    padding: -6px 9px;
+    top: 0px;
+    height: 65px;
+    left: 0px;
+    box-shadow: 0px 4px 5px black;
+
+}
+
+#navbar::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0px 20px;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    padding: 9px 0px;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+/* Navbar end here */
+
+#navbar #potraitNav {
+  display: none;
+}
+#navbar #hamburgur {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  #navbar ul {
+    padding: 0px 0px;
+    padding-left: 10px;
+  }
+  #navbar #hamburgur {
+  display: flex;
+      right: 0;
+    position: absolute;
+}
+.name1 {
+    display: flex;
+    flex-direction: column;
+}
+#develper {
+  align-items: start;
+    flex-direction: column;
+
+}
+  #dco {
+    width: 500px;
+  }
+  .name1 {
+    margin: 0;
+  }
+  .h-primary {
+    margin-left: 0;
+  }
+  #navbar #verticalNav {
+    display: none;
+  }
+  #navbar #potraitNav {
+    left: -400px;
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 6px 0px 23px 0px;
+    background: rgba(0, 0, 0, 0.424);
+    flex-direction: column;
+    height: 100vh;
+    transition: left 0.4s ease-in-out;
+  }
+  #navbar #potraitNav .wrongBtn{
+    padding: 18px 0;
+
+  }
+  #navbar #potraitNav .wrongBtn a{
+display: flex;
+justify-content: end;
+  }
+  #navbar #potraitNav li {
+    padding: 10px 50px;
+}
+
+.about-photo-container {
+    width: 280px;
+    height: 280px;
+    
+}
+.about-blackback {
+  width: 280px;
+    height: 280px;
+
+}
+.about-photo-front, .about-photo-back {
+    width: 280px;
+    height: 280px;
+}
+/* Additional responsive styles */
+}
+#navbar #potraitNav li:hover {
+      box-shadow: rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px,
+        rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px,
+        rgba(255, 255, 255, 0.09) 0px 32px 16px;
+  }
+#navbar #potraitNav a:hover {
+    color: white;
+   background-color: transparent;
+  }

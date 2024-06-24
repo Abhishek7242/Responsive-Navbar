@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav id="navbar">
+      <div id="namecon">
+        <h1 id="name">Responsive Navbar</h1>
+      </div>
+      <ul id="verticalNav">
+        <li class="item"><a onclick="scrollToSection('home')"> Home</a></li>
+        <li class="item"><a onclick="scrollToSection('AboutMe')">About</a></li>
+      
+        <li class="item"><a onclick="scrollToSection('contact')">Contact</a></li>
+        <li class="item"><a onclick="scrollToSection('skills')">More</a></li>
+    
+      </ul>
+      <ul id="hamburgur">
+        <li class="">
+          <a id="hamBtn"> <i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+      <ul id="potraitNav">
+        <li class="item wrongBtn">
+          <a id="cancelHam"> <i class="fa-regular fa-circle-xmark"></i></a>
+        </li>
+        <li class="item"><a onclick="scrollToSection('home')"> Home</a></li>
+        <li class="item"><a onclick="scrollToSection('AboutMe')">About</a></li>
+      
+        <li class="item"><a href="#footer">Contact</a></li>
+        <li class="item"><a href="">More</a></li>
+      </ul>
+    </nav>
+        <script
+      src="https://kit.fontawesome.com/8e5023dc6e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
